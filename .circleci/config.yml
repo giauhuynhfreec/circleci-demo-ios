@@ -58,16 +58,16 @@ workflows:
   build-test-adhoc:
     jobs:
       - build-and-test
-      - adhoc:
-          filters:
-            branches:
-              only: development
-          requires:
-            - build-and-test
-      - beta:
-          filters:
-            branches:
-              only: master
-          requires:
-            - build-and-test
+      # - adhoc:
+      #     filters:
+      #       branches:
+      #         only: development
+      #     requires:
+      #       - build-and-test
+      # - beta:
+      #     filters:
+      #       branches:
+      #         only: master
+      #     requires:
+      #       - build-and-test
             
