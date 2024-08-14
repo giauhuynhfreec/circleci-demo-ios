@@ -16,7 +16,6 @@
 		49EC45551BF4D533000A8470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49EC45541BF4D533000A8470 /* Assets.xcassets */; };
 		49EC45581BF4D533000A8470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49EC45561BF4D533000A8470 /* LaunchScreen.storyboard */; };
 		49EC45631BF4D533000A8470 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC45621BF4D533000A8470 /* GameTests.swift */; };
-		49EC456E1BF4D533000A8470 /* GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC456D1BF4D533000A8470 /* GameUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +50,6 @@
 		49EC45621BF4D533000A8470 /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		49EC45641BF4D533000A8470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49EC45691BF4D533000A8470 /* GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		49EC456D1BF4D533000A8470 /* GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUITests.swift; sourceTree = "<group>"; };
 		49EC456F1BF4D533000A8470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				02DE4A9B218705020058CC26 /* SnapshotHelper.swift */,
-				49EC456D1BF4D533000A8470 /* GameUITests.swift */,
 				49EC456F1BF4D533000A8470 /* Info.plist */,
 			);
 			path = GameUITests;
@@ -294,7 +291,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49EC456E1BF4D533000A8470 /* GameUITests.swift in Sources */,
 				02DE4A9C218705020058CC26 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
