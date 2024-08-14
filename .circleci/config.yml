@@ -2,7 +2,8 @@ version: 2
 jobs:
   build-and-test:
     macos:
-      xcode: "10.2.0"
+      xcode: "14.0.0"  # Cập nhật phiên bản Xcode mới hơn
+      resource_class: macos.m1.medium  # Cập nhật resource class
     working_directory: /Users/distiller/project
     environment:
       FL_OUTPUT_DIR: output
@@ -21,7 +22,8 @@ jobs:
 
   adhoc:
     macos:
-      xcode: "10.2.0"
+      xcode: "14.0.0"  # Cập nhật phiên bản Xcode mới hơn
+      resource_class: macos.m1.medium  # Cập nhật resource class
     working_directory: /Users/distiller/project
     environment:
       FL_OUTPUT_DIR: output
@@ -38,7 +40,8 @@ jobs:
 
   beta:
     macos:
-      xcode: "10.2.0"
+      xcode: "14.0.0"  # Cập nhật phiên bản Xcode mới hơn
+      resource_class: macos.m1.medium  # Cập nhật resource class
     working_directory: /Users/distiller/project
     environment:
       FL_OUTPUT_DIR: output
