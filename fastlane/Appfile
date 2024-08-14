@@ -1,7 +1,7 @@
-app_identifier "com.circleci.ios-game" # The bundle identifier of your app
-apple_id "" # Your Apple email address
+app_identifier "freec.asia.karasta" # The bundle identifier of your app
+apple_id "tungco@freec.asia" # Your Apple email address
 
-team_id "" # Developer Portal Team ID
+team_id "VVLVJ8XG6Q" # Developer Portal Team ID
 
 # you can even provide different app identifiers, Apple IDs and team names per lane:
 # More information: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Appfile.md

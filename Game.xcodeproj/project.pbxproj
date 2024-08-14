@@ -16,7 +16,6 @@
 		49EC45551BF4D533000A8470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49EC45541BF4D533000A8470 /* Assets.xcassets */; };
 		49EC45581BF4D533000A8470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49EC45561BF4D533000A8470 /* LaunchScreen.storyboard */; };
 		49EC45631BF4D533000A8470 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC45621BF4D533000A8470 /* GameTests.swift */; };
-		49EC456E1BF4D533000A8470 /* GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC456D1BF4D533000A8470 /* GameUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +50,6 @@
 		49EC45621BF4D533000A8470 /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		49EC45641BF4D533000A8470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49EC45691BF4D533000A8470 /* GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		49EC456D1BF4D533000A8470 /* GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUITests.swift; sourceTree = "<group>"; };
 		49EC456F1BF4D533000A8470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				02DE4A9B218705020058CC26 /* SnapshotHelper.swift */,
-				49EC456D1BF4D533000A8470 /* GameUITests.swift */,
 				49EC456F1BF4D533000A8470 /* Info.plist */,
 			);
 			path = GameUITests;
@@ -202,7 +199,7 @@
 				TargetAttributes = {
 					49EC45451BF4D532000A8470 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = GL92ZZ6423;
+						DevelopmentTeam = VVLVJ8XG6Q;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Manual;
 					};
@@ -227,6 +224,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -293,7 +291,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49EC456E1BF4D533000A8470 /* GameUITests.swift in Sources */,
 				02DE4A9C218705020058CC26 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +442,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VVLVJ8XG6Q;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -452,8 +451,9 @@
 				INFOPLIST_FILE = Game/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.circleci.ios-game";
+				PRODUCT_BUNDLE_IDENTIFIER = freec.asia.karasta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Karasta_Provisioning;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -464,6 +464,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VVLVJ8XG6Q;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -471,9 +476,11 @@
 				INFOPLIST_FILE = Game/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.circleci.ios-game";
+				PRODUCT_BUNDLE_IDENTIFIER = freec.asia.karasta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f63324d3-c12a-43fe-8a6c-edc0c0c5f159";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Karasta_Provisioning;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
